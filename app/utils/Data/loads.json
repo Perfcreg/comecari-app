@@ -1,0 +1,108 @@
+[
+    {
+        "shipmentNumber": "123423211",
+        "origin": {
+          "name": "Lagos",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA"
+        },
+        "destination": {
+          "name": "Lagos",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA"
+        },
+        "status": "In Transit",
+        "trackingNumber": "1234567890",
+        "carrier": "DHL",
+        "estimatedDeliveryDate": "2023-05-15",
+        "currentLocation": {
+          "name": "Lagos",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA"
+        },
+        "truckType": "FLAT_BED",
+        "history": [
+          {
+            "date": "2023-05-01",
+            "status": "Shipment received",
+            "location": "New York, NY"
+          },
+          {
+            "date": "2023-05-03",
+            "status": "In transit",
+            "location": "Los Angeles, CA"
+          },
+          {
+            "date": "2023-05-05",
+            "status": "Out for delivery",
+            "location": "Chicago, IL"
+          },
+          {
+            "date": "2023-05-07",
+            "status": "Delivered",
+            "location": "New York, NY"
+          }
+        ],
+        "assets": [
+          {
+            "name": "Box 1",
+            "description": "A large box",
+            "quantity": 2,
+            "weight": 10,
+            "dimensions": "10x10x10",
+            "value": 100
+          },
+          {
+            "name": "Box 2",
+            "description": "A small box",
+            "quantity": 1,
+            "weight": 5,
+            "dimensions": "5x5x5",
+            "value": 50
+          }
+        ],
+        "notes": "Please handle with care"
+    },
+    {
+        "shipmentNumber": "2223432113",
+        "origin": {
+          "name": "Lagos",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA"
+        },
+        "destination": {
+          "name": "Lagos",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA"
+        },
+        "truckType": "STEP_DECK",
+        "status": "In Transit",
+        "trackingNumber": "1234567890",
+        "carrier": "DHL",
+        "estimatedDeliveryDate": "2023-05-15",
+        "currentLocation": {
+          "name": "Lagos",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zip": "10001",
+          "country": "USA"
+        },
+
+    }
+]

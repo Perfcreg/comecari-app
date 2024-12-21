@@ -1,0 +1,14 @@
+[
+  {
+    "Sender": "You",
+    "Message": "Hello where are you"
+  },
+  {
+    "Sender": "Driver",
+    "Message": "Hello! I will be with you shortly"
+  },
+  {
+    "Sender": "You",
+    "Message": "No problem!"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "location": "Shokoto to Lagos",
+    "Status": "Pending"
+  },
+  {
+     "location": "Lagos to Port Harcort",
+    "Status": "Close"
+  },
+  {
+  "location": "Ibadan to Lagos",
+    "Status": "Pending"
+  },
+  {
+     "location": "Lagos to Port Harcort",
+    "Status": "Pending"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "name": "Comecari",
+  "displayName": "Comecari",
+  "expo": {
+    "name": "Comecari",
+    "slug": "comecari",
+    "scheme": "comecari",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/comecari/logo.png",
+    "splash": {
+      "image": "./assets/images/comecari/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "enabled": false
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "icon": "./assets/images/app-icon-android-legacy.png",
+      "package": "com.comecari.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
+        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+      },
+      "splash": {
+        "image": "./assets/images/comecari/logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#fff"
+      }
+    },
+    "ios": {
+      "icon": "./assets/images/app-icon-ios.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.comecari.app",
+      "splash": {
+        "image": "./assets/images/splash-logo-ios-mobile.png",
+        "tabletImage": "./assets/images/splash-logo-ios-tablet.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#fff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/app-icon-web-favicon.png",
+      "splash": {
+        "image": "./assets/images/splash-logo-web.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#fff"
+      }
+    },
+    "plugins": [
+      "expo-localization",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b2b33702-667a-4e19-b722-579634b375a7"
+      },
+      "dev": {
+        "env": {
+          "API_URL": "https://ee52-105-113-61-204.ngrok-free.app/dev",
+          "PAYSTACK_PUBLIC_KEY": "pk_test_28aab3722909db78993474d6123d93f9d2c69043",
+          "PAYSTACK_SECRET_KEY": "sk_test_dbdf0d7a80a954fedea5c9fbb9878bdb97b1bd96",
+          "GOOGLE_MAPS_API_KEY": "AIzaSyDyKTMmIr2-e-2JsnZaJ-w8JB_Pxjr0lFo"
+        }
+      },
+      "prod": {
+        "env": {
+          "API_URL": "https://ecvw2ymhqq.eu-west-2.awsapprunner.com/api",
+          "PAYSTACK_PUBLIC_KEY": "your_prod_public_key",
+          "PAYSTACK_SECRET_KEY": "your_prod_secret_key",
+          "GOOGLE_MAPS_API_KEY": "AIzaSyDyKTMmIr2-e-2JsnZaJ-w8JB_Pxjr0lFo"
+        }
+      }
+    },
+    "owner": "phemieny7"
+  }
+}
