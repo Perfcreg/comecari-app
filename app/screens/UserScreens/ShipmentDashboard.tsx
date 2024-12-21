@@ -18,16 +18,6 @@ const menuItems = [
     screen: "ActiveShipments",
   },
   {
-    title: "New Shipment",
-    icon: "plus-circle",
-    screen: "Book",
-  },
-  {
-    title: "Track Shipment",
-    icon: "route",
-    screen: "Tracking",
-  },
-  {
     title: "Shipment Analytics",
     icon: "chart-line",
     screen: "ShipmentAnalytics",

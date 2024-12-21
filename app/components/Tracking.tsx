@@ -20,13 +20,7 @@ export const TrackingBoard = ({ title, item }: TrackingProps) => {
 
   const accountSlide = ({item}) => {
     return (
-      <ShipmentCard
-        shipmentNum ={item.shipmentNumber}
-        from={item.origin?.name}
-        to={item.destination?.name}
-        status={item.status}
-        truck={item.truckImage}
-      />
+      <ShipmentCard data={item}/>
     )
   }
   const { width: screenWidth, height: screenHeight } = Dimensions.get("window")
@@ -50,7 +44,7 @@ export const TrackingBoard = ({ title, item }: TrackingProps) => {
         <CarouselCards 
           data={item} 
           renderItem={accountSlide}  
-          height={200}
+          height={230}
           width={screenWidth - spacing.extraLarge}
           scrollAnimationDuration={3000}
           // mode="parallax"
@@ -60,7 +54,6 @@ export const TrackingBoard = ({ title, item }: TrackingProps) => {
           autoPlay= {false}
           autoPlayInterval= {2000}
           autoPlayReverse = {false}
-          
         />
       ) : (
         <Text style={{}}>No Data Yet</Text>

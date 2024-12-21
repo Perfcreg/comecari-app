@@ -34,6 +34,8 @@ export const ShipmentCard = (prop) => {
     console.log('Region changed:', region);
   };
 
+  console.log(prop.data)
+
   return (
     <View style={[$board]}>
       <ShipmentMapView
@@ -50,7 +52,7 @@ export const ShipmentCard = (prop) => {
               fontWeight: 'bold',
               fontSize: 16
             }}>
-              #COME01-{prop.shipmentNum}
+              #COME01-{prop.data.shipmentNumber}
             </Text>
           </View>
           <View style={{
@@ -58,7 +60,7 @@ export const ShipmentCard = (prop) => {
             borderRadius: 50,
             padding: 5,
           }}>
-            <Image source={prop.truck} resizeMode="contain" style={$truck} />
+            <Image source={prop.data.truckImage} resizeMode="contain" style={$truck} />
           </View>
 
 
@@ -81,7 +83,7 @@ export const ShipmentCard = (prop) => {
                   fontSize: 14,
                   left: 10
 
-                }}>{prop.from}</Text>
+                }}>{prop.data.currentLocation.address}</Text>
 
               </View>
             </View>
@@ -100,7 +102,7 @@ export const ShipmentCard = (prop) => {
                   fontSize: 16,
                   left: 10
 
-                }}>{prop.status}</Text>
+                }}>{prop.data.status}</Text>
               </View>
             </View>
           </View>
@@ -113,7 +115,7 @@ export const ShipmentCard = (prop) => {
 const $board: ViewStyle = {
   
   // flex: 1,
-  marginBottom: spa,
+  marginBottom: spacing.medium,
   borderRadius: 27,
   overflow: 'hidden'
 }

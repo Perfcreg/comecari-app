@@ -52,7 +52,7 @@ export const FeatureTab = ({ navigation }) => {
         <FeatureButton
           title="Shipping Cost"
           iconName="calculator"
-          onPress={() => navigation.navigate("User", { screen: "Payment" })}
+          onPress={() => navigation.navigate("User", { screen: "ShippingCalculator" })}
           color={colors.palette.secondary500}
         />
         <FeatureButton
@@ -75,7 +75,7 @@ export const FeatureTab = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     padding: spacing.medium,
-    marginBottom: spacing.medium,
+    // marginBottom: spacing.medium,
   },
   sectionTitle: {
     fontSize: 18,

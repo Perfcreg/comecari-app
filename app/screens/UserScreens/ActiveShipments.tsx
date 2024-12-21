@@ -42,11 +42,6 @@ export const ActiveShipments: FC<DemoTabScreenProps<"ActiveShipments">> = functi
         });
         setShipments(updatedData);
       }
-      if (refresh) {
-        setShipments([...shipments])
-      } else {
-        setShipments(prev => [...prev, ...shipments])
-      }
     } catch (error) {
       console.error("Error fetching shipments:", error)
     } finally {
@@ -73,14 +68,11 @@ export const ActiveShipments: FC<DemoTabScreenProps<"ActiveShipments">> = functi
     }
   }
 
-  const renderItem = (item) => (
-    <ShipmentCard
-      shipmentNum={item.shipmentNumber}
-      from={item.origin}
-      to={item.destination}
-      status={item.status}
-      truck={item.truckImage}
-    />
+  const renderItem = ({item}) => (
+    <>
+      <ShipmentCard data={item}    />
+    </>
+   
   )
 
   return (
@@ -97,7 +89,7 @@ export const ActiveShipments: FC<DemoTabScreenProps<"ActiveShipments">> = functi
       <FlatList
         data={shipments}
         renderItem={renderItem}
-        keyExtractor={(item) => item?.shipmentNumber}
+        keyExtractor={(item) => item?.index}
         onEndReached={loadMore}
         onEndReachedThreshold={0.5}
         style={$container}

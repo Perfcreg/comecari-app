@@ -27,6 +27,7 @@ import { AppStackParamList, AppStackScreenProps } from "./AppNavigator"
 import { DriverNavigator, DriverNavigatorParamList } from "./DriverNavigator"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { MainTabNavigator } from "./MainTabNavigator"
+import { ShippingCalculator } from "../screens/UserScreens/ShippingCalculator"
 
 export type UserTabParamList = {
   ShipmentDashboard: undefined
@@ -51,7 +52,7 @@ export type UserTabParamList = {
   EditProfile: undefined
   ShipmentBooked: undefined
   ChangePassword: undefined
-  // ActiveShipment: undefined
+  ShippingCalculator: undefined
 }
 
 /**
@@ -94,6 +95,8 @@ export function UserNavigator() {
       <Stack.Screen name="EditProfile" component={EditProfile} />
       <Stack.Screen name="ShipmentBooked" component={ShipmentBooked} />
       <Stack.Screen name="ChangePassword" component={ChangePassword} />
+      <Stack.Screen name="ShippingCalculator" component={ShippingCalculator} />
+
     </Stack.Navigator>
   )
 }
